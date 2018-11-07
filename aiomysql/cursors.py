@@ -474,7 +474,8 @@ class Cursor:
         self._rows = result.rows
 
         if result.warning_count > 0:
-            await self._show_warnings(conn)
+            # await self._show_warnings(conn)
+            pass
 
     async def _show_warnings(self, conn):
         if self._result and self._result.has_next:
